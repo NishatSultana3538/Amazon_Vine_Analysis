@@ -8,14 +8,14 @@ In this project, you’ll have access to approximately 50 datasets. Each one con
 Using your knowledge of the cloud ETL process, you’ll create an AWS RDS database with tables in pgAdmin, pick a dataset from the Amazon Review datasets (Links to an external site.), and extract the dataset into a DataFrame. You'll transform the DataFrame into four separate DataFrames that match the table schema in pgAdmin. Then, you'll upload the transformed data into the appropriate tables and run queries in pgAdmin to confirm that the data has been uploaded.
 
 ## Results:
-![review_id]()
-![customer_table]()
-![product_table]()
-![vine_table]()
+![review_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/review_df.png)
+![customer_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/customer_df.png)
+![product_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/products_df.png)
+![vine_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine-df.png)
 
-![review_id]()
-![customer_table]()
-![product_table]()
-![vine_table]()
+![review_id_table](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/review_table.png)
+![customer_table](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/customer_table.png)
+![product_table](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/product_table.png)
+![vine_table](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_table.png)
 
 
