@@ -8,6 +8,10 @@ In this project, you’ll have access to approximately 50 datasets. Each one con
 Using your knowledge of the cloud ETL process, you’ll create an AWS RDS database with tables in pgAdmin, pick a dataset from the Amazon Review datasets (Links to an external site.), and extract the dataset into a DataFrame. You'll transform the DataFrame into four separate DataFrames that match the table schema in pgAdmin. Then, you'll upload the transformed data into the appropriate tables and run queries in pgAdmin to confirm that the data has been uploaded.
 
 ## Results:
+
+Using the amazon review data from [review](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Wireless_v1_00.tsv.gz) (https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Wireless_v1_00.tsv.gz)
+
+![Amazon_review_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/Amazon_review_df.png)
 ![review_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/review_df.png)
 ![customer_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/customer_df.png)
 ![product_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/products_df.png)
