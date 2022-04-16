@@ -15,6 +15,7 @@ Software: Google Colab Notebook, PostgreSQL , pgAdmin 4, AWS
 
 ## Results:
 
+## Perform ETL on Amazon Product Reviews
 Using the amazon review data from [review](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz) (https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz) and the Google colab notebook file [Amazon_review-ETL](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb)
 I fot the following data frame:
 
@@ -28,6 +29,8 @@ I fot the following data frame:
 
 ![vine_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine-df.png)
 
+### Load the DataFrames into pgAdmin
+
 After creating the connection to the AWS RDS instance(database))
 and loading the DataFrames  to tables in pgAdmin I got the following tables:
 
@@ -38,6 +41,20 @@ and loading the DataFrames  to tables in pgAdmin I got the following tables:
 ![product_table](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/product_table.png)
 
 ![vine_table](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_table.png)
+
+## Determine Bias of Vine Reviews:
+Using your knowledge of PySpark, Pandas, or SQL, you’ll determine if there is any bias towards reviews that were written as part of the Vine program. For this analysis, you'll determine if having a paid Vine review makes a difference in the percentage of 5-star reviews.
+
+From the vine_table above using pyspark []() and pandas[]() I got the following results:
+
+
+How many Vine reviews and non-Vine reviews were there?
+There were 94 Vine reviews and 40471 non-Vine reviews.
+How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+From the analysis we got 48  Vine reviews were 5 stars and 15663 non-Vine reviews were 5 stars.
+What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+About 51% of Vine reviews were 5 stars and 39% of non-Vine reviews were 5 stars.
+
 
 
 ## Summary:
