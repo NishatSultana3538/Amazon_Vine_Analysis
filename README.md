@@ -108,6 +108,10 @@ Non paid review data frame
 
 ![nonVine _only](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/nonVine_df.png)
 
+Number of reviews
+
+![Number of reviews](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/number_of_reviews.png)
+
 Percent five star
 
 ![percent_five star](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/perct_five_star.png)
