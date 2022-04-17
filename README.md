@@ -1,4 +1,5 @@
 # Amazon_Vine_Analysis
+
 ## Background:
 Amazon_Vine_Analysis is about analyzing Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.
 
@@ -21,30 +22,48 @@ Software: Google Colab Notebook, PostgreSQL , pgAdmin 4, AWS
 Using the amazon review data from [review](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz) (https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz) and the Google colab notebook file [Amazon_review-ETL](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb)
 I got the following data frame:
 * Amazon_review_df
+
 ![Amazon_review_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/Amazon_review_df.png)
+
 * Review_df
+
 ![review_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/review_df.png)
+
 * Customer_df
+
 ![customer_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/customer_df.png)
+
 * Product_df
+
 ![product_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/products_df.png)
+
 * Vine_df
+
 ![vine_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine-df.png)
 
 ### Load the DataFrames into pgAdmin
 
 After creating the connection to the AWS RDS instance(database))
 and loading the DataFrames  to tables in pgAdmin I got the following tables:
+
 * Review_id_table
+
 ![review_id_table](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/review_table.png)
+
 * Customer_table
+
 ![customer_table](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/customer_table.png)
+
 * Product_table]
+
 ![product_table](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/product_table.png)
+
 * Vine_table
+
 ![vine_table](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_table.png)
 
 ## Determine Bias of Vine Reviews:
+
 Using the knowledge of PySpark, Pandas, or SQL, we need to determine if there is any bias towards reviews that were written as part of the Vine program. For this analysis, you'll determine if having a paid Vine review makes a difference in the percentage of 5-star reviews.
 
 From the vine_table above using pyspark [Vine_Review_Analysis.ipynb](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/Vine_Review_Analysis.ipynb) and pandas[Vine_Review_Analysis_Pandas.ipynb](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/Vine_Review_Analysis_Pandas.ipynb) I got the following results:
@@ -78,8 +97,10 @@ Filter the new DataFrame or table created in Step 1 and create a new DataFrame o
 
 Paid review data frame
 ![vine_only](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/vine_only_df.png)
+
 Non paid review data frame
 ![nonVine _only](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/nonVine_df.png)
+
 ![percent_five star](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/perct_five_star.png)
 
 ## Summary:
