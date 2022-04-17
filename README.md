@@ -49,10 +49,15 @@ From the vine_table above using pyspark []() and pandas[]() I got the following 
 
 ### Vine review results:
 * How many Vine reviews and non-Vine reviews were there?
+
 There were 94 Vine reviews and 40471 non-Vine reviews.
+
 * How many Vine reviews were 5 stars? How many non-Vine reviews were 5 stars?
+
 From the analysis we got 48  Vine reviews were 5 stars and 15663 non-Vine reviews were 5 stars.
+
 * What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
+
 About 51% of Vine reviews were 5 stars and 39% of non-Vine reviews were 5 stars.
 
 Filter the data and create a new DataFrame or table to retrieve all the rows where the total_votes count is equal to or greater than 20 to pick reviews that are more likely to be helpful
