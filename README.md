@@ -3,9 +3,10 @@
 ## Background:
 Amazon_Vine_Analysis is about analyzing Amazon reviews written by members of the paid Amazon Vine program. The Amazon Vine program is a service that allows manufacturers and publishers to receive reviews for their products. Companies like SellBy pay a small fee to Amazon and provide products to Amazon Vine members, who are then required to publish a review.
 
+### Analysis Overview:
+
 In this project, we have access to approximately 50 datasets. Each one contains reviews of a specific product, from clothing apparel to wireless products. We need to pick one of these datasets and use PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Next, we need to use PySpark, Pandas, or SQL to determine if there is any bias toward favorable reviews from Vine members in the  dataset. 
 
-### Analysis Overview:
 This project analyzes Amazon Vine program and determines if there is a bias toward favorable reviews from Vine members. The analysis uses PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, load the transformed data into pgAdmin and calculate different metrics.
 
 ### Perform ETL on Amazon Product Reviews:  
@@ -20,7 +21,7 @@ Software: Google Colab Notebook, Pandas, PostgreSQL , pgAdmin 4, AWS
 
 ## Perform ETL on Amazon Product Reviews
 
-Using the amazon review data from [review](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz) (https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz) and the Google colab notebook file [Amazon_review-ETL](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb)
+Using the amazon review data from [review_video_games](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz) (https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz) and the Google colab notebook file [Amazon_review-ETL](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb)
 I got the following data frame:
 
 * Amazon_review_df
@@ -86,6 +87,7 @@ From the analysis we got 48  Vine reviews were 5 stars and 15663 non-Vine review
 About 51% of Vine reviews were 5 stars and 39% of non-Vine reviews were 5 stars.
 
 
+### Vine Review DataFrame:
 
 Below are the data frame and results I got from Vine_Review_Analysis:
 
