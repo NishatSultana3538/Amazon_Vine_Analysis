@@ -14,13 +14,15 @@ Using the knowledge of the cloud ETL process, we need to create an AWS RDS datab
 ## Resources:
 Data Source: Amazon Review datasets.
 
-Software: Google Colab Notebook, PostgreSQL , pgAdmin 4, AWS
+Software: Google Colab Notebook, Pandas, PostgreSQL , pgAdmin 4, AWS
 
 ## Results:
 
 ## Perform ETL on Amazon Product Reviews
+
 Using the amazon review data from [review](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz) (https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Video_Games_v1_00.tsv.gz) and the Google colab notebook file [Amazon_review-ETL](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb)
 I got the following data frame:
+
 * Amazon_review_df
 
 ![Amazon_review_df](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/Amazon_review_df.png)
@@ -93,12 +95,15 @@ Filter the data and create a new DataFrame or table to retrieve all the rows whe
 
 
 Filter the new DataFrame or table created in Step 1 and create a new DataFrame or table to retrieve all the rows where the number of helpful_votes divided by total_votes is equal to or greater than 50%.
+
 ![vote_greater_50](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/vote_greater_50.png)
 
 Paid review data frame
+
 ![vine_only](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/vine_only_df.png)
 
 Non paid review data frame
+
 ![nonVine _only](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/nonVine_df.png)
 
 ![percent_five star](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/perct_five_star.png)
