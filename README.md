@@ -55,7 +55,19 @@ From the analysis we got 48  Vine reviews were 5 stars and 15663 non-Vine review
 What percentage of Vine reviews were 5 stars? What percentage of non-Vine reviews were 5 stars?
 About 51% of Vine reviews were 5 stars and 39% of non-Vine reviews were 5 stars.
 
+Filter the data and create a new DataFrame or table to retrieve all the rows where the total_votes count is equal to or greater than 20 to pick reviews that are more likely to be helpful
+![total_vote_20](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/total_votes_20.png)
 
+
+
+Filter the new DataFrame or table created in Step 1 and create a new DataFrame or table to retrieve all the rows where the number of helpful_votes divided by total_votes is equal to or greater than 50%.
+![vote_greater_50](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/vote_greater_50.png)
+
+Paid review data frame
+![vine_only](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/vine_only_df.png)
+Non paid review data frame
+![nonVine _only](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/nonVine_df.png)
+![percent_five star](https://github.com/NishatSultana3538/Amazon_Vine_Analysis/blob/main/image/vine_review_image/perct_five_star.png)
 
 ## Summary:
 51% of the Vine reviews  were 5 stars reviews whereas the percentage in the non-Vine reviews is only 39%. This describes a positivity bias for reviews in the Vine program or the paid program.
