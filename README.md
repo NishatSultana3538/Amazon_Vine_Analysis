@@ -114,7 +114,7 @@ Percent five star
 
 ## Summary:
 
-51% of the Vine reviews  were 5 stars reviews whereas the percentage in the non-Vine reviews is only 39%. This describes a positivity bias for reviews in the Vine program or the paid program compared to non paid program.
+51% of the Vine reviews  were 5 stars reviews whereas the percentage of 5 stars reviews in the non-Vine reviews is only 39%. This describes a positivity bias for 5 stars reviews in the Vine program or the paid program compared to non paid program.
 
 An additional analysis we can do is to do the same analysis across different products and compare if this bias exist across different products.
 
